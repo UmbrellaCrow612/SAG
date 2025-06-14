@@ -1,5 +1,5 @@
 export const sagMetaData = {
-  discordLink: "https://discord.gg/tYWnPbwa2",
+  discordLink: "https://discord.gg/tYWnPbwa2P",
   events: [
     {
       date: "Not confirmed yet",
