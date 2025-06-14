@@ -9,6 +9,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="w-full h-full">
+      <head>
+        <link
+          rel="apple-touch-icon"
+          sizes="192x192"
+          href="/android-chrome-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/android-chrome-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="512x512"
+          href="/android-chrome-512x512.png"
+        />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#ffffff" />
+      </head>
       <body className="w-full h-full container mx-auto bg-black">
         <Header />
         {children}

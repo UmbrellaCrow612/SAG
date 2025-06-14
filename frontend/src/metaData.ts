@@ -1,4 +1,4 @@
-export const metaData = {
+export const sagMetaData = {
   discordLink: "https://discord.gg/tYWnPbwa2",
   events: [
     {
@@ -58,4 +58,5 @@ export const metaData = {
       location: "Not confirmed yet",
     },
   ],
+  siteUrl: "https://sheffieldanimegroup.com"
 } as const;
