@@ -1,3 +1,4 @@
+import { metaData } from "@/metaData";
 import Logo from "./Logo";
 import { Button } from "./ui/button";
 import { IconBrandDiscord } from "@tabler/icons-react";
@@ -12,7 +13,7 @@ export default function Header() {
 
       <Button asChild variant="link" size="default" className="text-white">
         <a
-          href="https://discord.gg/tYWnPbwa2P"
+          href={metaData.discordLink}
           target="_blank"
           rel="noopener noreferrer"
         >
