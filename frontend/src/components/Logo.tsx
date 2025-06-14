@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 /**
  * Returns hendo chan logo SVG HTML */
 export default function Logo() {
   return (
     <>
-      <a href="/">
+      <Link href="/">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 125"
@@ -52,7 +54,7 @@ export default function Logo() {
             />
           </g>
         </svg>
-      </a>
+      </Link>
     </>
   );
 }

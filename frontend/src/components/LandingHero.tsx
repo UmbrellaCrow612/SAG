@@ -8,7 +8,7 @@ export default function LandingHeroSection() {
           Sheffield Anime Group
         </h1>
         <p className="text-gray-100 text-base sm:text-lg">
-          Join Sheffield's most vibrant anime community! Watch, discuss, and
+          Join Sheffield&apos;s most vibrant anime community! Watch, discuss, and
           celebrate anime with fellow fans in the Steel City. Join the Discord.
         </p>
       </div>

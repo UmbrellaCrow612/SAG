@@ -27,8 +27,6 @@ export default function RootLayout({
           sizes="512x512"
           href="/android-chrome-512x512.png"
         />
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#ffffff" />
       </head>
       <body className="w-full h-full container mx-auto bg-black">
         <Header />

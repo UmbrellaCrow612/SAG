@@ -15,12 +15,12 @@ export default function WhatWeDoSection() {
           Sheffield Anime Group is a community of passionate fans who gather to
           explore the best of anime together. We host regular watch parties,
           cosplay events, and discussions around both classic and new series.
-          Whether you're a seasoned fan or just getting started, there's a place
+          Whether you&apos;re a seasoned fan or just getting started, there&apos;s a place
           for you in our welcoming community.
         </p>
         <p className="text-gray-100 text-lg">
           Join us for themed nights, quizzes, creative showcases, and much more.
-          We're here to celebrate anime culture in all its forms!
+          We&apos;re here to celebrate anime culture in all its forms!
         </p>
       </div>
     </section>
