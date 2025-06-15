@@ -11,6 +11,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="w-full h-full">
       <head>
+        <link rel="icon" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"
           sizes="192x192"
