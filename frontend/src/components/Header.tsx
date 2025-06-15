@@ -3,6 +3,21 @@ import Logo from "./Logo";
 import { Button } from "./ui/button";
 import { IconBrandDiscord } from "@tabler/icons-react";
 
+const headerLinks: { href: string; name: string }[] = [
+  {
+    href: "/#upcoming_events",
+    name: "Events",
+  },
+  {
+    href: "/#join_us",
+    name: "Join",
+  },
+  {
+    href: "gallery",
+    name: "Gallery",
+  },
+];
+
 /**
  * The navigation header component
  */
@@ -12,12 +27,17 @@ export default function Header() {
       <Logo />
 
       <div className="flex gap-5">
-        <Button asChild variant="link" size="default" className="text-white">
-          <a href="#upcoming_events">Events</a>
-        </Button>
-        <Button asChild variant="link" size="default" className="text-white">
-          <a href="#join_us">Join</a>
-        </Button>
+        {headerLinks.map((x, index) => (
+          <Button
+            asChild
+            variant="link"
+            size="default"
+            className="text-white"
+            key={index}
+          >
+            <a href={x.href}>{x.name}</a>
+          </Button>
+        ))}
       </div>
 
       <Button asChild variant="link" size="default" className="text-white">
