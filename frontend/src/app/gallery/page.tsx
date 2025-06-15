@@ -11,6 +11,30 @@ import {
 import { ExternalLink } from "lucide-react";
 import { sagMetaData } from "@/metaData";
 import { IconBrandInstagram, IconBrandTwitter } from "@tabler/icons-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sheffield Anime Gallery | Cosplay Photography & Local Events",
+  description:
+    "Explore vibrant cosplay moments and candid snapshots from Sheffield anime events and meetups. Discover local artists, photographers, and the thriving anime community in Sheffield, UK.",
+  keywords: [
+    "Sheffield anime",
+    "cosplay photography",
+    "anime events Sheffield",
+    "cosplay gallery",
+    "anime meetups",
+    "Sheffield cosplayers",
+    "anime community UK",
+    "cosplay artists",
+    "anime convention photos",
+    "Sheffield events",
+  ],
+  authors: [{ name: "Sheffield Anime Gallery" }],
+  creator: "Sheffield Anime Gallery",
+  publisher: "Sheffield Anime Gallery",
+  category: "Photography",
+  classification: "Gallery",
+};
 
 export default function Component() {
   return (
