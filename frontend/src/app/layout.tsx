@@ -32,7 +32,6 @@ export default function RootLayout({
 
         <meta name="theme-color" content="#000000" />
         <meta name="format-detection" content="telephone=no" />
-        <link rel="canonical" href="https://www.sheffieldanimegroup.com/" />
 
         <meta name="robots" content="index, follow" />
       </head>
