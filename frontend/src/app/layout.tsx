@@ -29,6 +29,12 @@ export default function RootLayout({
           sizes="512x512"
           href="/android-chrome-512x512.png"
         />
+
+        <meta name="theme-color" content="#000000" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="canonical" href="https://www.sheffieldanimegroup.com/" />
+
+        <meta name="robots" content="index, follow" />
       </head>
       <body className="w-full h-full container mx-auto bg-black">
         <Header />

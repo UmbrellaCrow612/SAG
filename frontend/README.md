@@ -45,3 +45,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - By default dark theme styles eveything 
 - We will not support a light theme, or a light theme switcher
 - Only ever use defined tailwind css classes no custom ones or custom combined ones with tailwind css
+
+
+
+# Build and deploy for prod
+- Run next-sitemap - update robot and sml ts file with values `npx next-sitemap`
+- Update `sitemap.ts` with values
+- Then build

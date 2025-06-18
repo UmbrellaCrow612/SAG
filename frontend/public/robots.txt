@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://www.sheffieldanimegroup.com/
-
-# Sitemaps
-Sitemap: https://www.sheffieldanimegroup.com/sitemap.xml
