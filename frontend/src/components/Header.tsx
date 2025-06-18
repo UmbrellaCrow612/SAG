@@ -4,7 +4,13 @@ import { sagMetaData } from "@/metaData";
 import Logo from "./Logo";
 import { Button } from "./ui/button";
 import { IconBrandDiscord, IconMenu2 } from "@tabler/icons-react";
-import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "./ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetTitle,
+  SheetTrigger,
+} from "./ui/sheet";
 import { useState } from "react";
 
 const headerLinks: { href: string; name: string }[] = [
@@ -81,6 +87,7 @@ function MobileMenu() {
           className="bg-zinc-900 border-zinc-800 text-white w-[300px]"
         >
           <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+          <SheetDescription className="sr-only">Navigate</SheetDescription>
           <div className="flex flex-col gap-6 mt-8">
             {/* Mobile Navigation Links */}
             <nav className="flex flex-col gap-4">
@@ -93,7 +100,22 @@ function MobileMenu() {
                   key={index}
                   onClick={() => setIsOpen(false)}
                 >
-                  <a href={link.href}>{link.name}</a>
+                  <a
+                    href={link.href}
+                    onClick={(e) => {
+                      const pathname = window.location.pathname;
+                      if (pathname === "/" && link.href.startsWith("/#")) {
+                        e.preventDefault();
+                        const id = link.href.split("#")[1];
+                        const el = document.getElementById(id);
+                        if (el) {
+                          el.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }
+                    }}
+                  >
+                    {link.name}
+                  </a>
                 </Button>
               ))}
             </nav>
