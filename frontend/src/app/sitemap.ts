@@ -28,11 +28,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 0.7,
     },
-    {
-      url: "https://www.sheffieldanimegroup.com/sitemap-0.xml",
-      lastModified,
-      changeFrequency: "daily",
-      priority: 0.7,
-    },
   ];
 }
